@@ -1,0 +1,17 @@
+name: IPShield
+main: studio.vdev.ipshield.IPShield
+version: 1.0.0
+api-version: '1.20'
+author: VDEV Studios
+description: Locks each account to its first IP. Protected by VDEV Studios.
+commands:
+  ipshield:
+    description: IPShield admin command
+    usage: /ipshield <reload|logs|info|unlock>
+    aliases: [ips]
+    permission: ipshield.admin
+permissions:
+  ipshield.admin:
+    default: op
+  ipshield.notify:
+    default: op
