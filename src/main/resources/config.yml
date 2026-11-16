@@ -1,0 +1,27 @@
+# ===== IPShield by VDEV Studios =====
+
+# 0 = account stays locked to its IP forever.
+# Any number = minutes after the player LEAVES before the lock expires
+lock-minutes: 0
+
+# IPs that are always allowed (e.g. your own admin IP)
+trusted-ips: []
+
+# Players that are never checked (by name)
+bypass-players: []
+
+# Placeholders: %id% (log id), %player%
+kick-message:
+  - "&c&lIP ACCOUNT DETECTED"
+  - "&b PROTECTED BY VDEV STUDIOS"
+  - ""
+  - "&fthis account already been used by other ip"
+  - ""
+  - "&7Log ID: &e#%id%"
+
+notify-staff: true
+staff-message: "&8[&bIPShield&8] &c%player% &7was blocked (different IP). Log &e#%id%"
+
+log-to-file: true
+# Digits in the log id (4 = 0013)
+id-digits: 4
